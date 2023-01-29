@@ -31,7 +31,7 @@ const CartScreen = () => {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
-    dispatch(removeFromCart(id))
+    dispatch(removeFromCart(id));
   };
   const checkoutHandler = () => {
     navigate('/login?redirect=shipping');
