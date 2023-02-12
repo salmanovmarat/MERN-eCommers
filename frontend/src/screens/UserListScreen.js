@@ -5,7 +5,7 @@ import { Table, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import { listUsers, deletUser } from '../actions/userAction';
+import { listUsers, deleteUser } from '../actions/userAction';
 
 const UserListScreen = () => {
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const UserListScreen = () => {
 
   const deleteHandler = (id) => {
     if (window.confirm('Are you sure you want to delete this user')) {
-      dispatch(deletUser(id));
+      dispatch(deleteUser(id));
     }
   };
 
