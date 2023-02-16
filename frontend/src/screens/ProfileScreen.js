@@ -145,7 +145,7 @@ const ProfileScreen = () => {
                     </td>
                     <td>
                       {order.isDelivered ? (
-                        order.delivereddAt.substring(0, 10)
+                        order.deliveredAt.substring(0, 10)
                       ) : (
                         <i
                           className="fas fa-times"
