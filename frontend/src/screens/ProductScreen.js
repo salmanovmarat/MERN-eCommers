@@ -14,6 +14,7 @@ import {} from 'react-bootstrap/ListGroup';
 import Rating from '../components/Rating';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
+import Meta from '../components/Meta';
 import {
   listProductDetails,
   createProductReview,
@@ -65,6 +66,7 @@ const ProductScreen = () => {
 
   return (
     <>
+      <Meta title={product.name} />
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
